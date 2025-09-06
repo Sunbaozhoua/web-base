@@ -1,0 +1,95 @@
+.todo-container {
+    margin: 60px 120px;
+}
+
+.input-section {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.todo-input {
+    flex: 1;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-right: 16px;
+}
+
+.todo-input:focus {
+    outline: none;
+    background: white;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.todo-input::placeholder {
+    color: #999;
+}
+
+.add-button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    background: #4096ff;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.del-button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 10px;
+    background: #ff4d4f;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+     margin-right: 6px;
+}
+
+.edit-button {
+     padding: 6px 12px;
+    border: none;
+    border-radius: 10px;
+   background: #4096ff;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-right: 6px;
+}
+
+.add-button[disabled] {
+    background: #d9d9d9;
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.todo-list {
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.todos-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
